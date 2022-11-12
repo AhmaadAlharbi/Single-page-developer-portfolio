@@ -2,8 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-main {
-  background-image: url(./images/image-profile-desktop.webp);
-  background-size: cover;
-  background-position: center;
+/* main {
+  background-image: url(../images/image-profile-desktop.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 35% top 45%;
+  padding-top: 20px;
+}
+
+@media (max-width: 960px) {
+  main {
+    background-image: url(../images/image-profile-tablet.webp);
+  }
+}
+@media (max-width: 567) {
+  main {
+    background-image: url(../images/image-profile-mobile.webp);
+  }
+} */
+#hero h1 {
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }

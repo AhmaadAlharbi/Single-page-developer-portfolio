@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Simple Tailwind Starter</title>
+    <title>Adam Keys Portfolio</title>
   </head>
-  <body class="bg-Black">
+  <body class="bg-Black relative">
     <main>
       <nav
-        class="flex justify-between items-center mt-10 relative px-40 container"
+        class="flex flex-wrap justify-between items-center lg:container mt-5 px-40"
       >
-        <h1 class="text-White font-extrabold">adamkeyes</h1>
-        <ul class="flex space-x-8">
+        <h1 class="text-White text-3xl font-extrabold mb-4 cursor-pointer">
+          adamkeyes
+        </h1>
+        <ul class="flex space-x-5 lg:space-x-6 md:space-x-4">
           <li>
             <a href="#"><img src="images/icon-github.svg" alt="" /></a>
           </li>
@@ -28,41 +30,61 @@
           </li>
         </ul>
       </nav>
-      <!-- img container -->
-      <!-- <div class="absolute top-0 right-[490px] -z-10">
-    <img
-      src="images/image-profile-desktop.webp"
-      class="w-[445px] h-[720px] relative"
-      alt=""
-    />
-    <div class="absolute bottom-16 -left-16">
-      <svg xmlns="http://www.w3.org/2000/svg" width="129" height="129">
-        <circle
-          cx="830.5"
-          cy="585.5"
-          r="64"
-          fill="none"
-          stroke="#FFF"
-          transform="translate(-766 -521)"
-        />
-      </svg>
-    </div>
-  </div> -->
-      <section id="hero">
-        <div class="flex items-center mt-48 px-40">
+      <section id="hero" class="relative">
+        <div
+          class="flex flex-col-reverse md:flex-row justify-around items-center mt-5 md:px-16"
+        >
           <!-- text container -->
-          <div class="text-White">
-            <h1 class="text-7xl font-bold">
+          <div class="text-White flex-1 md:translate-x-24">
+            <h1 class="text-5xl md:text-6xl lg:text-8xl font-bold">
               Nice to meet you!<br />
-              I am <span class="border-b-4 border-Green">Adam Keyes.</span>
+              I’m <span class="border-b-4 border-Green">Adam Keyes.</span>
             </h1>
-            <p class="my-10 max-w-xs leading-relaxed text-Grey">
+            <p class="my-10 max-w-sm leading-relaxed text-Grey text-lg">
               Based in the UK, I’m a front-end developer passionate about
               building accessible web apps that users love.
             </p>
-            <a href="" class="border-b-2 border-Green pb-2 tracking-widest"
+            <a
+              href=""
+              class="border-b-2 border-Green pb-2 tracking-widest hover:text-Green transition-all duration-200 hover:pb-4"
               >CONTACT ME</a
             >
+            <div class="absolute top-32 -left-40 -z-30">
+              <svg xmlns="http://www.w3.org/2000/svg" width="530" height="129">
+                <g fill="none" fill-rule="evenodd" stroke="#FFF" opacity=".25">
+                  <ellipse cx="265" cy="40" rx="264.5" ry="39.5" />
+                  <ellipse cx="265" cy="52" rx="264.5" ry="39.5" />
+                  <ellipse cx="265" cy="65" rx="264.5" ry="39.5" />
+                  <ellipse cx="265" cy="77" rx="264.5" ry="39.5" />
+                  <ellipse cx="265" cy="89" rx="264.5" ry="39.5" />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="-translate-y-36 -z-30 basis-1/2 hidden lg:block">
+            <img
+              class="w-[445px] h-[720px]"
+              src="images/image-profile-desktop.webp"
+              alt=""
+            />
+          </div>
+          <!-- tablet image -->
+          <div
+            class="-translate-y-36 translate-x-20 -z-30 hidden md:block lg:hidden"
+          >
+            <img
+              src="images/image-profile-tablet.webp"
+              class="w-[322px] h-[600px] relative"
+              alt=""
+            />
+          </div>
+          <!-- mobile image -->
+          <div class="-translate-y-28 -z-30 basis-1/2 md:hidden">
+            <img
+              class="w-[174px] h-[383px]"
+              src="images/image-profile-mobile.webp"
+              alt=""
+            />
           </div>
         </div>
       </section>
