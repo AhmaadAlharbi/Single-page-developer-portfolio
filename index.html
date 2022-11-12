@@ -10,22 +10,22 @@
   <body class="bg-Black relative">
     <main>
       <nav
-        class="flex flex-wrap justify-between items-center lg:container mt-5 px-40"
+        class="flex flex-col md:flex-row justify-between items-center lg:container mt-5 md:px-40"
       >
         <h1 class="text-White text-3xl font-extrabold mb-4 cursor-pointer">
           adamkeyes
         </h1>
-        <ul class="flex space-x-5 lg:space-x-6 md:space-x-4">
-          <li>
+        <ul class="flex items-center space-x-7">
+          <li class="">
             <a href="#"><img src="images/icon-github.svg" alt="" /></a>
           </li>
-          <li>
+          <li class="">
             <a href="#"><img src="images/icon-frontend-mentor.svg" alt="" /></a>
           </li>
-          <li>
+          <li class="">
             <a href="#"><img src="images/icon-linkedin.svg" alt="" /></a>
           </li>
-          <li>
+          <li class="">
             <a href="#"><img src="images/icon-twitter.svg" alt="" /></a>
           </li>
         </ul>
@@ -35,12 +35,16 @@
           class="flex flex-col-reverse md:flex-row justify-around items-center mt-5 md:px-16"
         >
           <!-- text container -->
-          <div class="text-White flex-1 md:translate-x-24">
-            <h1 class="text-5xl md:text-6xl lg:text-8xl font-bold">
+          <div
+            class="text-White flex-1 md:translate-x-24 text-center md:text-left"
+          >
+            <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold">
               Nice to meet you!<br />
               I’m <span class="border-b-4 border-Green">Adam Keyes.</span>
             </h1>
-            <p class="my-10 max-w-sm leading-relaxed text-Grey text-lg">
+            <p
+              class="my-10 max-w-md px-6 md:px-2 leading-relaxed text-Grey text-lg"
+            >
               Based in the UK, I’m a front-end developer passionate about
               building accessible web apps that users love.
             </p>
@@ -79,7 +83,7 @@
             />
           </div>
           <!-- mobile image -->
-          <div class="-translate-y-28 -z-30 basis-1/2 md:hidden">
+          <div class="basis-1/2 md:hidden">
             <img
               class="w-[174px] h-[383px]"
               src="images/image-profile-mobile.webp"
