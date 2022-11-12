@@ -7,8 +7,65 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Simple Tailwind Starter</title>
   </head>
-  <body>
-    <h1 class="text-4xl mb-4 bg-red-400">Welcome</h1>
-    <p>Start building your Tailwind project</p>
+  <body class="bg-Black">
+    <main>
+      <nav
+        class="flex justify-between items-center mt-10 relative px-40 container"
+      >
+        <h1 class="text-White font-extrabold">adamkeyes</h1>
+        <ul class="flex space-x-8">
+          <li>
+            <a href="#"><img src="images/icon-github.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/icon-frontend-mentor.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/icon-linkedin.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/icon-twitter.svg" alt="" /></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- img container -->
+      <!-- <div class="absolute top-0 right-[490px] -z-10">
+    <img
+      src="images/image-profile-desktop.webp"
+      class="w-[445px] h-[720px] relative"
+      alt=""
+    />
+    <div class="absolute bottom-16 -left-16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="129" height="129">
+        <circle
+          cx="830.5"
+          cy="585.5"
+          r="64"
+          fill="none"
+          stroke="#FFF"
+          transform="translate(-766 -521)"
+        />
+      </svg>
+    </div>
+  </div> -->
+      <section id="hero">
+        <div class="flex items-center mt-48 px-40">
+          <!-- text container -->
+          <div class="text-White">
+            <h1 class="text-7xl font-bold">
+              Nice to meet you!<br />
+              I am <span class="border-b-4 border-Green">Adam Keyes.</span>
+            </h1>
+            <p class="my-10 max-w-xs leading-relaxed text-Grey">
+              Based in the UK, I’m a front-end developer passionate about
+              building accessible web apps that users love.
+            </p>
+            <a href="" class="border-b-2 border-Green pb-2 tracking-widest"
+              >CONTACT ME</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
