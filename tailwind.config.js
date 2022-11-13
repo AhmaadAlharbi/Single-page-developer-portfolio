@@ -9,6 +9,9 @@ module.exports = {
         Grey: "#D9D9D9",
         White: "#FFFFFF",
       },
+      fontFamily: {
+        fontSpace: ["Space Grotesk", "sans-serif"],
+      },
     },
   },
   plugins: [],
