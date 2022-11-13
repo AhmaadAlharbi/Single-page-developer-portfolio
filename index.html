@@ -423,6 +423,116 @@
           </div>
         </div>
       </section>
+      <!-- contact section -->
+      <section id="contact" class="bg-DarkGrey px-10 py-10">
+        <div class="flex flex-col justify-center items-center">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 md:gap-40 text-White place-items-center relative"
+          >
+            <!-- text container -->
+            <div class="text-center md:text-left">
+              <h2 class="text-4xl md:text-6xl font-bold mb-6">Contact</h2>
+              <p class="text-Grey max-w-sm leading-loose">
+                I would love to hear about your project and how I could help.
+                Please fill in the form, and I’ll get back to you as soon as
+                possible.
+              </p>
+              <!-- rings -->
+              <div class="absolute -bottom-20 md:bottom-0 -left-96">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="530"
+                  height="129"
+                >
+                  <g
+                    fill="none"
+                    fill-rule="evenodd"
+                    stroke="#FFF"
+                    opacity=".25"
+                  >
+                    <ellipse cx="265" cy="40" rx="264.5" ry="39.5" />
+                    <ellipse cx="265" cy="52" rx="264.5" ry="39.5" />
+                    <ellipse cx="265" cy="65" rx="264.5" ry="39.5" />
+                    <ellipse cx="265" cy="77" rx="264.5" ry="39.5" />
+                    <ellipse cx="265" cy="89" rx="264.5" ry="39.5" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <!-- form -->
+            <form class="w-full flex flex-col">
+              <input
+                id="name"
+                type="text"
+                class="w-full bg-transparent border-b-2 border-Grey py-6 focus:outline-0"
+                placeholder="NAME"
+              />
+              <div class="relative flex flex-col">
+                <input
+                  id="email"
+                  type="email"
+                  class="w-full bg-transparent border-b-2 border-Grey py-6 mt-10 focus:outline-0"
+                  placeholder="EMAIL"
+                />
+                <span
+                  id="warningText"
+                  class="text-red-500 place-self-end mt-1 hidden"
+                  >Sorry,invalid format here</span
+                >
+                <img
+                  id="warningIcon"
+                  src="/images/warning.svg"
+                  class="hidden absolute mr-2 w-10 top-14 right-0"
+                  alt="Search Icon"
+                />
+              </div>
+
+              <textarea
+                id="message"
+                placeholder="MESSAGE"
+                class="w-full bg-transparent border-b-2 border-Grey py-6 mt-10 focus:ring-0 focus:border-Grey focus:outline-0"
+              ></textarea>
+              <button
+                id="send"
+                type="submit"
+                class="border-b-2 mt-10 place-self-end border-Green pb-2 tracking-widest hover:text-Green transition-all duration-200 hover:pb-4"
+              >
+                SEND MESSAGE
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer
+        class="flex flex-col justify-center items-center text-white bg-DarkGrey py-10"
+      >
+        <!-- border -->
+        <div class="w-3/4 border-2 border-Gray"></div>
+        <div
+          class="flex flex-col md:flex-row justify-between items-center lg:container mt-5 md:px-40"
+        >
+          <h1 class="text-White text-3xl font-extrabold mb-4 cursor-pointer">
+            adamkeyes
+          </h1>
+          <ul class="flex items-center space-x-7">
+            <li class="">
+              <a href="#"><img src="images/icon-github.svg" alt="" /></a>
+            </li>
+            <li class="">
+              <a href="#"
+                ><img src="images/icon-frontend-mentor.svg" alt=""
+              /></a>
+            </li>
+            <li class="">
+              <a href="#"><img src="images/icon-linkedin.svg" alt="" /></a>
+            </li>
+            <li class="">
+              <a href="#"><img src="images/icon-twitter.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>
